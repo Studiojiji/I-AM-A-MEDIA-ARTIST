@@ -1,0 +1,647 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url(../img/background.png);
+    background-size: 25%;
+}
+
+body,
+html,
+#wrap,
+header {
+    height: 100%;
+}
+section{
+    position: relative;
+    z-index: 10;
+}
+header {
+    min-height: 768px;
+    position: relative;
+}
+
+.big_title {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.normal_title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.small_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.normal_para {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.big_para {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.decoration{
+    display: inline-block;
+    position: absolute;
+    z-index: 15;
+    background-size: contain;
+}
+.circlea{
+    width: 400px;
+    height: 335px;
+    background-image: url(../img/circleA.png);
+}
+.circleb{
+    width: 329px;
+    height: 367px;
+    background-image: url(../img/circleB.png);
+}
+.circlec{
+    width: 334px;
+    height: 290px;
+    background-image: url(../img/circleC.png);
+}
+.redcircle{
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/workshop_circlered.png);
+}
+.bluecircle{
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/workshop_circleblue.png);
+}
+
+
+
+/*navigation*/
+
+
+
+nav .left_nav {
+    position: fixed;
+    margin: 50px 0 0 50px;
+    z-index: 50;
+}
+
+nav .left_nav .logo span {
+    width: 85px;
+    height: 85px;
+    background-color: #2C22BA;
+    display: inline-block;
+}
+
+nav .right_nav{
+    position: fixed;
+    z-index: 50;
+    float: right;
+    top: 50%;
+    margin-top: -50px;
+    right: 50px;
+    text-align: right;
+}
+nav .page_nav li{
+    position: relative;
+    margin: 10px 0;
+}
+nav .page_nav li .text{
+    color: #A7A7A7;
+    font-size: 16px;
+    display: inline-block;
+    margin:0 20px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    transition: all .2s ease;
+    width: 140px;
+
+}
+nav .page_nav li.on .text{
+    color: #fff;
+    font-weight: 500;
+}
+
+nav .page_nav li .circle{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid #A7A7A7;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+   
+    margin: 5px 0 5px 20px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+nav .page_nav li.on .circle{
+  
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #2C22BA;
+    border-color: #2C22BA;
+    top: -30px;
+}
+
+/*intro coding*/
+
+section.intro {
+    color: #1B1E5B;
+    text-align: center;
+    height: 100%;
+}
+
+.intro .production{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    margin-top: -130px;
+}
+.intro .production_li li{
+    margin: 20px 0;
+}
+.intro .production_li span{
+    width: 180px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+section.intro .title .small_title {
+    padding: 50px 0 10px 0;
+}
+
+section.intro .title .big_title {
+    font-weight: 100;
+    font-size: 80px;
+}
+
+section.intro .main_illust {
+    max-width: 600px;
+    height: 360px;
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+
+.main_illust span {
+    position: absolute;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 360px;
+}
+
+.main_illust .backgrid_img {
+    background-image: url(../img/intro_grid.png);
+    z-index: 1;
+}
+
+.main_illust .face_img {
+    background-image: url(../img/intro_face.png);
+    z-index: 2;
+}
+
+.main_illust .camera_img {
+    background-image: url(../img/intro_camera.png);
+    z-index: 3;
+}
+
+.main_illust .siss_img {
+    background-image: url(../img/intro_sissors.png);
+    z-index: 3;
+}
+
+.main_illust .laptop_img {
+    background-image: url(../img/intro_laptop.png);
+    z-index: 3;
+}
+
+.intro .bottom_text .small_title {
+    margin: 40px 0 10px 0;
+}
+
+.intro .down_btn {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/intro_bottomarrow.png);
+    background-size: contain;
+    background-size: ;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 30px;
+}
+
+/*about coding*/
+
+section.about {
+    padding-bottom: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about .blue_box {
+    background: radial-gradient(circle, #b6deff, #6b77db);
+    width: 100%;
+    height: 300px;
+}
+
+
+.about .about_text {
+    margin-top: -200px;
+    background-color: #fff;
+    text-align: center;
+    color: #373737;
+    position: relative;
+}
+
+.about_text:before {
+    background-image: linear-gradient(to right, #FF5151 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 50px 5px;
+    background-repeat: repeat-x;
+    content: "";
+    height: 5px;
+    max-width: 850px;
+    margin: 0 auto;
+    display: block;
+}
+
+.about_text .top_text .normal_title {
+    font-weight: 100;
+    padding: 40px 0 33px 0;
+    font-size: 48px;
+}
+
+.about_text .top_text .normal_para {
+    max-width: 850px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.about_text .top_text {
+    border-bottom: 2px solid #373737;
+}
+
+.about_text .about_li {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+}
+
+.about_text .about_li h3 {
+    margin-bottom: 10px;
+}
+
+.about_text .about_li h3:before {
+    width: 5px;
+    height: 5px;
+    content: "";
+    display: inline-block;
+    background-color: #FF5151;
+    margin: 5px 10px 5px 0;
+}
+
+.about_text .about_li p {
+    margin-bottom: 40px;
+}
+
+.about_text .illust {
+    position: absolute;
+    display: inline-block;
+    content: "";
+
+}
+
+.about_text .left_illust {
+    width: 390px;
+    height: 310px;
+    background-image: url(../img/about_leftillust.png);
+    left: -200px;
+    top: 373px;
+}
+
+.about_text .right_illust {
+    width: 292px;
+    height: 494px;
+    background-image: url(../img/about_rightillust.png);
+    top: 368px;
+    right: -130px;
+}
+
+/*workshop*/
+
+section.workshop .workshop_about {
+    background: linear-gradient(to bottom right, #FFBCCE 50%, #FF5151);
+    position: relative;
+}
+
+
+.workshop_about .decoration.circlec{
+    top: -120px;
+    left: 20px;
+}
+.workshop_about .decoration.redcircle{
+    top: -120px;
+    right: 50px;
+}
+.workshop_about .decoration.bluecircle{
+    z-index: -2;
+    bottom: -80px;
+    left: 10px;  
+}
+.workshop_about .decoration.circlea{
+    z-index: -2;
+    bottom: -160px;
+    right: 10px;  
+}
+.workshop_about .big_title {
+    color: #1B1E5B;
+    text-align: center;
+    padding: 65px 0 80px 0;
+}
+.workshop_about:before{
+    background-image: linear-gradient(to right, #FF5151 20%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 30px 5px;
+    background-repeat: repeat-x;
+    content: "";
+    height: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery {
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+}
+.gallery_btn{
+    width: 50px;
+    height: 50px;
+    display: block;
+    top: 175px;
+    position: absolute;
+}
+.gallery_btn.left_btn{
+    background-image: url(../img/workshop_leftarrow.png);
+    left: -100px;
+}
+.gallery_btn.right_btn{
+    background-image: url(../img/workshop_rightarrow.png);
+    right: -100px;
+}
+.gallnav_wrap{
+    position: absolute;
+    background-color: rgba(55, 55, 55, 0.7);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.gallnav{
+    margin: 0 auto;
+    max-width: 300px;
+}
+.gallnav li{
+    float: left;
+    margin: 0 15px;
+    padding: 10px 0;
+}
+.gallnav li.on span{
+    background: #FF5151;
+}
+.gallnav li span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 20px;
+    
+}
+.workshop_about .bottom_text {
+    color: #373737;
+    padding: 33px 33px 70px 33px;
+    box-sizing: border-box;
+}
+
+.workshop_about .bottom_text h2 {
+    margin-bottom: 12px;
+}
+
+
+/*workshop video */
+
+.workshop_video {
+    padding: 110px 0 130px 0;
+}
+
+.video_li li .thumb {
+    height: 235px;
+    background-color: grey;
+}
+
+.video_li li .text {
+    text-align: right;
+}
+
+.video_li li .text h3 {
+    padding: 40px 50px 10px 0;
+}
+
+.video_li li .text p {
+    padding: 0 50px 140px 0;
+}
+
+.video_li li {
+    border-bottom: 2px solid #A7A7A7;
+}
+
+.video_li li:last-child {
+    border: 0;
+}
+
+.workshop_video .bottom_text {
+    background: linear-gradient(to bottom right, #FFBCCE 50%, #FF5151);
+    color: #373737;
+    position: relative;
+}
+.workshop_video .bottom_text .decoration{
+    background-image: url(../img/workshop_videoboxcat.png);
+    width: 190px;
+    height: 147px;
+    right: 40px;
+    top: 50px;
+}
+
+.workshop_video .bottom_text .normal_title {
+    padding: 35px 50px 15px 50px;
+}
+
+.workshop_video .bottom_text .normal_para {
+    padding: 0 50px 100px 50px;
+}
+
+/*artist*/
+
+section.artist .artist_lineup {
+    background: linear-gradient(to right, #b6deff, #6b77db);
+    text-align: center;
+    color: #373737;
+    padding: 0 0 100px 0;
+    position: relative;
+}
+.artist_lineup:before{
+
+    background-image: linear-gradient(to right, #FF5151 20%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 30px 5px;
+    background-repeat: repeat-x;
+    content: "";
+    height: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+
+}
+.artist_lineup .decoration.circleb{
+    left: 30px;
+    top: -150px;
+}
+.artist_lineup .decoration.bluecircle{
+    right: 20px;
+    top: -80px;
+}
+.artist_lineup .decoration.redcircle{
+    left: 30px;
+    bottom: -70px;
+    z-index: -2;
+}
+.artist_lineup .decoration.circlec{
+    right: 20px;
+    bottom: -180px;
+    z-index: -2;
+}
+
+.artist_lineup h2 {
+    padding: 50px 0 85px 0;
+    border-bottom: 2px solid #6D6D6D;
+}
+
+.artist_lineup .big_para {
+    padding: 90px 0 50px 0;
+}
+
+.artist_lineup .artist_li li {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 70px 0;
+}
+
+.artist_video {
+    padding: 110px 0 130px 0;
+}
+
+.artist_video .top_text:before{
+    background-image: linear-gradient(to right, #FF5151 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 50px 5px;
+    background-repeat: repeat-x;
+    content: "";
+    height: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+.artist_video .top_text {
+    background: linear-gradient(to right, #b6deff, #6b77db);
+    color: #373737;
+    text-align: right;
+    position: relative;
+}
+.artist_video .top_text .decoration.ear_illust{
+    width: 298px;
+    height: 191px;
+    background-image: url(../img/video%20artist_videoears.png);
+    top: 50px;
+    left: 10px;;
+}
+
+.artist_video .top_text .normal_title {
+    padding: 35px 50px 15px 50px;
+}
+
+.artist_video .top_text .normal_para {
+    padding: 0 50px 100px 50px;
+}
+
+/*people*/
+
+section.people {
+    background: radial-gradient(circle, #161346, #1F202D);
+    color: #A7A7A7;
+    padding-bottom: 100px;
+}
+
+.people h2 {
+    text-align: center;
+    padding: 50px 0 80px 0;
+    border-bottom: 2px solid #6D6D6D;
+    margin-bottom: 90px;
+}
+
+.people_content {
+    font-size: 16px;
+    line-height: 3;
+    font-weight: 300;
+}
+
+.people_content > div {
+    padding-left: 33px;
+}
+
+.people_content .part {
+    font-weight: 500;
+}
+
+footer {
+    background: linear-gradient(to right, #fab6cb, #454142);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .production_li span {
+    text-indent: -9999px;
+    width: 50%;
+    height: 30px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.production_li li:nth-child(1) span {
+    background-image: url(../img/footer_seoullogo.png);
+}
+
+.production_li li:nth-child(2) span {
+    background-image: url(../img/footer_culturelogo.png);
+}
+
+.production_li li:nth-child(3) span {
+    background-image: url(../img/footer_aliceonlogo.png);
+}
+
+.production_li li:nth-child(4) span {
+    background-image: url(../img/footer_citycenterlogo.png);
+}

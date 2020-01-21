@@ -1,0 +1,1074 @@
+/*default*/
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    background-image: url(../img/background.png);
+    background-size: 25%;
+}
+
+body,
+html,
+#wrap,
+header {
+    height: 100%;
+}
+
+header {
+    min-height: 768px;
+    position: relative;
+}
+
+.big_title {
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.normal_title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.small_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.normal_para {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.big_para {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.decoration,
+.illust {
+    display: inline-block;
+    position: absolute;
+    z-index: 15;
+    background-size: contain;
+}
+
+.circlea {
+    width: 400px;
+    height: 335px;
+    background-image: url(../img/circleA.png);
+}
+
+.circleb {
+    width: 329px;
+    height: 367px;
+    background-image: url(../img/circleB.png);
+}
+
+.circlec {
+    width: 334px;
+    height: 290px;
+    background-image: url(../img/circleC.png);
+}
+
+.redcircle {
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/workshop_circlered.png);
+}
+
+.bluecircle {
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/workshop_circleblue.png);
+}
+
+/*navigation*/
+
+nav .left_nav {
+    position: fixed;
+    margin: 50px 0 0 50px;
+    z-index: 50;
+}
+
+nav .left_nav .logo span {
+    width: 85px;
+    height: 85px;
+    background-image: url(../img/Imlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+nav .right_nav {
+    position: fixed;
+    z-index: 50;
+    float: right;
+    top: 50%;
+    margin-top: -50px;
+    right: 50px;
+    text-align: right;
+}
+
+nav .page_nav li {
+    position: relative;
+    content: "";
+    display: block;
+
+}
+
+nav .page_nav li a {
+    color: #A7A7A7;
+    font-size: 16px;
+    display: inline-block;
+    margin: 5px 20px 5px 0;
+    padding: 5px 0;
+    right: 0;
+    z-index: 2;
+    transition: all .2s ease;
+}
+
+nav .page_nav li:hover a {
+    color: #BCB2FF;
+}
+
+nav .page_nav li.on a {
+    color: #fff;
+    font-weight: 700;
+}
+
+nav .page_nav li .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 14px 0 auto 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+nav .page_nav li:hover .circle {
+    background-color: #BCB2FF;
+}
+
+nav .page_nav li.on .circle {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom right, #786EDF, #2B21B7);
+    top: -30px;
+}
+
+/*intro coding*/
+
+section.intro {
+    color: #1B1E5B;
+    text-align: center;
+    height: 100%;
+}
+
+.intro .production {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    margin-top: -130px;
+    z-index: 10;
+}
+
+.intro .production_li li {
+    margin: 20px 0;
+
+}
+
+.intro .production_li span {
+    width: 130px;
+    height: 45px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.intro .title .small_title {
+    padding: 50px 0 10px 0;
+
+}
+
+section.intro .title .small_title br {
+    display: none;
+}
+
+section.intro .title .big_title {
+    font-weight: 100;
+    font-size: 80px;
+
+}
+
+section.intro .title .big_title br {
+    display: none;
+}
+
+section.intro .main_illust {
+    max-width: 600px;
+    height: 360px;
+    margin: 40px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_illust span {
+    position: absolute;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 360px;
+}
+
+.main_illust .backgrid_img {
+    background-image: url(../img/intro_grid.png);
+    z-index: 1;
+    opacity: 0;
+}
+
+.main_illust .face_img {
+    background-image: url(../img/intro_face.png);
+    z-index: 2;
+    bottom: -360px;
+}
+
+.main_illust .camera_img {
+    background-image: url(../img/intro_camera.png);
+    z-index: 3;
+    opacity: 0;
+}
+
+.main_illust .siss_img {
+    background-image: url(../img/intro_sissors.png);
+    z-index: 3;
+    opacity: 0;
+}
+
+.main_illust .laptop_img {
+    background-image: url(../img/intro_laptop.png);
+    z-index: 3;
+    opacity: 0;
+}
+
+.intro .bottom_text .small_title {
+    margin: 40px 0 10px 0;
+}
+
+.intro .down_btn {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/intro_bottomarrow.png);
+    background-size: contain;
+    background-size: ;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+/*about coding*/
+
+section.about {
+    padding-bottom: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about .blue_box {
+    background: radial-gradient(circle, #b6deff, #6b77db);
+    width: 100%;
+    height: 300px;
+}
+
+.about_text_wrap {
+    padding: 0 10px;
+}
+
+.about .about_text {
+    margin-top: -200px;
+    background-color: #fff;
+    text-align: center;
+    color: #373737;
+    position: relative;
+}
+
+.about_text:before {
+    background-image: linear-gradient(to right, #FF5151 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 50px 5px;
+    background-repeat: repeat-x;
+    content: "";
+    height: 5px;
+    max-width: 850px;
+    margin: 0 auto;
+    display: block;
+}
+
+.about_text .top_text .normal_title {
+    font-weight: 100;
+    padding: 40px 0 33px 0;
+    font-size: 48px;
+}
+
+.about_text .top_text .normal_para {
+    max-width: 850px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.about_text .top_text .normal_para br {
+    display: none;
+}
+
+.about_text .top_text {
+    border-bottom: 2px solid #373737;
+}
+
+.about_text .about_li {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+}
+
+.about_text .about_li h3 {
+    margin-bottom: 10px;
+}
+
+.about_text .about_li h3:before {
+    width: 5px;
+    height: 5px;
+    content: "";
+    display: inline-block;
+    background-color: #FF5151;
+    margin: 5px 10px 5px 0;
+}
+
+.about_text .about_li p {
+    margin-bottom: 40px;
+}
+
+.about_text .illust {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-size: contain;
+    opacity: 0;
+}
+
+.about_text .left_illust {
+    width: 390px;
+    height: 310px;
+    background-image: url(../img/about_leftillust.png);
+    left: -200px;
+    top: 373px;
+}
+
+.about_text .right_illust {
+    width: 292px;
+    height: 494px;
+    background-image: url(../img/about_rightillust.png);
+    top: 368px;
+    right: -130px;
+}
+
+/*workshop coding*/
+
+section.workshop {
+    width: 100%;
+    overflow: hidden;
+}
+
+section.workshop .workshop_about {
+    background: linear-gradient(to bottom right, #FFBCCE 50%, #FF5151);
+    position: relative;
+
+}
+
+
+.workshop_about .decoration.circlec {
+    top: -120px;
+    left: 20px;
+}
+
+.workshop_about .decoration.redcircle {
+    top: -120px;
+    right: 50px;
+}
+
+.workshop_about .decoration.bluecircle {
+    z-index: -2;
+    bottom: -80px;
+    left: 10px;
+}
+
+.workshop_about .decoration.circlea {
+    z-index: -2;
+    bottom: -160px;
+    right: 10px;
+}
+
+.workshop_about .big_title {
+    color: #1B1E5B;
+    padding: 65px 0 80px 0;
+}
+
+.workshop_about:before {
+    background-image: linear-gradient(to right, #FF5151 20%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 30px 5px;
+    background-repeat: repeat-x;
+    content: "";
+    height: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery {
+    background-color: #fff;
+    position: relative;
+}
+
+.gallery_img {
+    overflow: hidden;
+}
+
+.gallery_btn {
+    width: 50px;
+    height: 50px;
+    display: block;
+    top: 175px;
+    position: absolute;
+    background-size: contain;
+}
+
+.gallery_btn.left_btn {
+    background-image: url(../img/workshop_leftarrow.png);
+    left: -100px;
+}
+
+.gallery_btn.right_btn {
+    background-image: url(../img/workshop_rightarrow.png);
+    right: -100px;
+}
+
+.gallery_btn a {
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+.gallnav_wrap {
+    position: absolute;
+    background-color: rgba(55, 55, 55, 0.7);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.gallnav {
+    margin: 0 auto;
+    max-width: 240px;
+}
+
+.gallnav a {
+    float: left;
+    margin: 0 15px;
+    padding: 10px 0;
+
+}
+
+.gallnav a.active span {
+    background: #FF5151;
+}
+
+.gallnav a span {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 20px;
+    transition: all .4s ease;
+}
+
+.workshop_about .bottom_text {
+    color: #373737;
+    padding: 33px 33px 70px 33px;
+    box-sizing: border-box;
+}
+
+.workshop_about .bottom_text h2 {
+    margin-bottom: 12px;
+}
+
+
+/*workshop video (+artist) */
+
+.workshop_video {
+    padding: 110px 10px 130px 10px;
+}
+
+.videoli_hover {
+    display: none;
+    position: fixed;
+    z-index: 33;
+}
+
+.videoli_hover span.play_ico {
+    width: 44px;
+    height: 44px;
+    display: block;
+    text-indent: -9999px;
+    background-image: url(../img/video_play.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin: 10px 10px 0 0;
+    float: left;
+}
+
+.videoli_hover span.video_title {
+    display: block;
+    width: 400px;
+    color: #282280;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.videoli_hover span.running_time {
+    display: block;
+    font-weight: 100;
+    color: #282280;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.video_li a {
+    display: block;
+}
+
+.video_li li .thumb {
+    height: 235px;
+    background-color: grey;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+    text-indent: -9999px;
+}
+
+.artist .video_li .thumb {
+    height: 284px;
+}
+
+.workshop_video .video_li li:nth-child(1) .thumb {
+    background-image: url(../img/workshop_thumb1.jpg);
+}
+
+.workshop_video .video_li li:nth-child(2) .thumb {
+    background-image: url(../img/workshop_thumb2.jpg);
+}
+
+.workshop_video .video_li li:nth-child(3) .thumb {
+    background-image: url(../img/workshop_thumb3.jpg);
+}
+
+.artist_video .video_li li:nth-child(1) .thumb {
+    background-image: url(../img/artist_thumb1.jpg);
+}
+
+.artist_video .video_li li:nth-child(2) .thumb {
+    background-image: url(../img/artist_thumb2.jpg);
+}
+
+.artist_video .video_li li:nth-child(3) .thumb {
+    background-image: url(../img/artist_thumb3.jpg);
+}
+
+.artist_video .video_li li:nth-child(4) .thumb {
+    background-image: url(../img/artist_thumb4.jpg);
+}
+
+.artist_video .video_li li:nth-child(5) .thumb {
+    background-image: url(../img/artist_thumb5.jpg);
+}
+
+.artist_video .video_li li:nth-child(6) .thumb {
+    background-image: url(../img/artist_thumb6.jpg);
+}
+
+.video_li li .text {
+
+    float: left;
+}
+
+.workshop .video_li li .text {
+    text-align: right;
+}
+
+.artist .video_li li .text {
+    text-align: left;
+}
+
+
+.video_li li .text .artist {
+    padding: 40px 50px 10px 0;
+}
+
+.artist .video_li li .text .title {
+    padding: 0 50px 10px 0;
+}
+
+.workshop .video_li li .text .title {
+    padding: 40px 50px 10px 0;
+}
+
+.video_li li .text .running_time {
+    padding: 0 50px 140px 0;
+}
+
+.video_li li {
+    border-bottom: 2px solid #A7A7A7;
+    cursor: pointer;
+    color: #373737;
+}
+
+.video_li li:last-child {
+    border: 0;
+}
+
+.workshop_video .bottom_text {
+    background: linear-gradient(to bottom right, #FFBCCE 50%, #FF5151);
+    color: #373737;
+    position: relative;
+}
+
+.workshop_video .bottom_text .illust {
+    background-image: url(../img/workshop_videoboxcat.png);
+    width: 190px;
+    height: 147px;
+    right: 40px;
+    top: 50px;
+}
+
+.workshop_video .bottom_text .normal_title {
+    padding: 35px 50px 15px 50px;
+}
+
+.workshop_video .bottom_text .normal_para {
+    padding: 0 50px 100px 50px;
+}
+
+/*artist coding*/
+
+.artist_hover {
+    position: fixed;
+    z-index: 33;
+    top: 10px;
+    left: 10px;
+}
+
+.artist_hover span.hover_image {
+    width: 100px;
+    height: 115px;
+    display: block;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 10px 10px 0 0;
+
+}
+
+section.artist .artist_lineup {
+    background: linear-gradient(to right, #b6deff, #6b77db);
+    text-align: center;
+    color: #373737;
+    padding: 0 0 100px 0;
+    position: relative;
+}
+
+.artist_lineup:before {
+
+    background-image: linear-gradient(to right, #FF5151 20%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 30px 5px;
+    background-repeat: repeat-x;
+    content: "";
+    height: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.artist_lineup .decoration.circleb {
+    left: 30px;
+    top: -150px;
+}
+
+.artist_lineup .decoration.bluecircle {
+    right: 20px;
+    top: -80px;
+}
+
+.artist_lineup .decoration.redcircle {
+    left: 30px;
+    bottom: -70px;
+    z-index: -2;
+}
+
+.artist_lineup .decoration.circlec {
+    right: 20px;
+    bottom: -180px;
+    z-index: -2;
+}
+
+.artist_lineup h2 {
+    padding: 50px 0 85px 0;
+    border-bottom: 2px solid #6D6D6D;
+}
+
+.artist_lineup .big_para {
+    padding: 90px 0 50px 0;
+}
+
+.artist_lineup .artist_li li {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 70px 0;
+    cursor: default;
+}
+
+.artist_video {
+    padding: 110px 10px 130px 10px;
+}
+
+.artist_video .video_li .col-right {
+    float: right;
+}
+
+.artist_video .top_text:before {
+    background-image: linear-gradient(to right, #FF5151 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 50px 5px;
+    background-repeat: repeat-x;
+    content: "";
+    height: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.artist_video .top_text {
+    background: linear-gradient(to right, #b6deff, #6b77db);
+    color: #373737;
+    text-align: right;
+    position: relative;
+}
+
+.artist_video .top_text .illust.ear_illust {
+    width: 298px;
+    height: 191px;
+    background-image: url(../img/video%20artist_videoears.png);
+    top: 50px;
+    left: 10px;
+    ;
+}
+
+.artist_video .top_text .normal_title {
+    padding: 35px 50px 15px 50px;
+}
+
+.artist_video .top_text .normal_para {
+    padding: 0 50px 100px 50px;
+}
+
+/*people coding*/
+
+section.people {
+    background: radial-gradient(circle, #161346, #1F202D);
+    color: #A7A7A7;
+    padding-bottom: 100px;
+}
+
+.people h2 {
+    padding: 50px 0 80px 0;
+    border-bottom: 2px solid #6D6D6D;
+    margin-bottom: 90px;
+}
+
+.people_content {
+    font-size: 16px;
+    line-height: 3;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.people_content > div {
+    padding-left: 33px;
+}
+
+.people_content .part {
+    font-weight: 500;
+}
+
+/*footer coding*/
+
+footer {
+    background: linear-gradient(to right, #fab6cb, #454142);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .production_li span {
+    text-indent: -9999px;
+    width: 130px;
+    height: 45px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.production_li li:nth-child(1) span {
+    background-image: url(../img/footer_logo1.png);
+}
+
+.production_li li:nth-child(2) span {
+    background-image: url(../img/footer_logo2.png);
+}
+
+.production_li li:nth-child(3) span {
+    background-image: url(../img/footer_logo3.png);
+}
+
+.production_li li:nth-child(4) span {
+    background-image: url(../img/footer_logo4.png);
+}
+
+@media(max-width:1023px) {
+    section.intro .title .big_title {
+        font-size: 70px;
+    }
+}
+
+@media(max-width:767px) {
+    br {
+        display: none
+    }
+    header {
+        min-height: 620px;
+    }
+    .decoration {
+        display: none;
+    }
+    .big_title {
+        font-size: 46px;
+        text-align: left;
+        margin-left: 30px;
+    }
+    nav .left_nav {
+        margin: 30px 0 0 30px;
+    }
+    nav .left_nav .logo span {
+        width: 44px;
+    }
+    nav .right_nav {
+        display: none;
+    }
+    section.intro .title .small_title {
+        line-height: 1.5;
+    }
+    section.intro .title .small_title br {
+        display: inline;
+    }
+    section.intro .title .big_title {
+        font-size: 36px;
+        text-align: center;
+        margin: 0 30px;
+        line-height: 1.5;
+    }
+    section.intro .title .big_title br {
+        display: inline;
+    }
+
+    .intro .production {
+        display: none;
+    }
+
+    section.intro .main_illust {
+        max-width: 400px;
+        height: 250px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .main_illust .backgrid_img {
+        display: none;
+    }
+    .intro .bottom_text .small_title {
+        display: none;
+    }
+    .intro .bottom_text .normal_title {
+        font-size: 18px;
+    }
+    .intro .down_btn {
+        width: 30px;
+        height: 30px;
+        margin-left: -15px;
+    }
+    section.about {
+        padding-bottom: 0;
+    }
+    .about .blue_box {
+        display: none;
+    }
+    .about_text_wrap {
+        background: radial-gradient(circle, #b6deff, #6b77db);
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+    .about .about_text {
+        margin-top: 0;
+        text-align: left;
+    }
+    .about_text:before {
+        display: none;
+    }
+    .about_text_content {
+        padding: 0 10px;
+    }
+    .about_text .top_text .normal_title {
+        display: none;
+    }
+    .about_text .top_text .normal_para {
+        padding: 27px;
+    }
+    .about_text .top_text .normal_para br {
+        display: inline;
+    }
+    .about_text .top_text {
+        border: none;
+    }
+    .about_text .bottom_text {
+        display: none;
+    }
+    .about_text .illust {
+        position: static;
+
+    }
+    .about_text .left_illust {
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .about_text .right_illust {
+        display: none;
+    }
+    section.workshop {
+        background: linear-gradient(to bottom right, #FFBCCE 50%, #FF5151);
+    }
+    section.workshop .workshop_about {
+        background: transparent;
+    }
+    .workshop_about .big_title {
+        padding: 40px 0;
+    }
+
+    .gallnav {
+        max-width: 180px;
+    }
+    .gallnav a {
+        margin: 0 10px;
+    }
+    .workshop_video {
+        padding: 0 0 130px 0;
+    }
+    .workshop_video .bottom_text p {
+        display: none;
+    }
+    .workshop_video .bottom_text .illust {
+        top: 30px;
+        width: 78px;
+        height: 60px;
+        left: 50%;
+        margin-left: -39px;
+    }
+
+    .video_li li .text {
+        background-image: url(../img/background.png);
+        background-size: 25%;
+    }
+    .video_li li .text h3 {
+        padding-top: 25px;
+    }
+    .video_li li .text p {
+        padding-bottom: 50px;
+    }
+    section.artist .artist_lineup {
+        background: linear-gradient(to bottom, #b6deff, #6b77db);
+    }
+    .artist_lineup .big_para {
+        padding: 30px 0;
+    }
+    .artist_lineup h2 {
+        border: 0;
+        padding: 40px 0;
+    }
+    .artist_lineup .artist_li li {
+        font-size: 18px;
+        padding: 30px 0;
+    }
+    .artist_video .top_text {
+        background: transparent;
+        position: static;
+    }
+    .artist_video .top_text .illust.ear_illust {
+        width: 176px;
+        height: 113px;
+        left: 50%;
+        margin-left: -88px;
+        bottom: 30px;
+        top: auto;
+    }
+    .artist_video .top_text .normal_title {
+        font-size: 24px;
+        text-align: left;
+        padding: 58px 30px 18px 30px;
+    }
+    .artist_video .top_text .normal_para {
+        display: none;
+    }
+    .artist_video {
+        padding: 0;
+        background: linear-gradient(to right, #b6deff, #6b77db);
+        padding-bottom: 170px;
+        position: relative;
+    }
+    .people h2 {
+        border: 0;
+        margin: 0 30px;
+        padding: 30px 0;
+    }
+    .people_content .part {
+        display: block;
+    }
+}
