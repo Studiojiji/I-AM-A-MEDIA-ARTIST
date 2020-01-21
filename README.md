@@ -1,2 +1,9 @@
-# I_AM_A_MEDIA_ARTIST
-2018년에 진행된 시민청 프로젝트 &lt;아임 어 미디어 아티스트>의 이벤트 페이지입니다.
+# I AM A MEDIA ARTIST
+< 아임 어 미디어 아티스트 ! > 시민청 2018 프로젝트로 시민들이 직접 미디어아티스트와 소통하며 작품을 만들어 보고, 
+웹 페이지에 작가들의 작업과 시민들의 작업, 워크샵 내용을 아카이빙하였습니다.
+기존의 호스팅이 사라져 업로드 해둡니다.
+
+link ▶︎ http://jiindev.dothome.co.kr/simin/
+
+DESIGN BY [JISU PARK](https://github.com/gpg1127)
+CODE BY [JIIN EUM](https://github.com/jiindev)
