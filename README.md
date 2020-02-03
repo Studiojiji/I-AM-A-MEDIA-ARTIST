@@ -3,6 +3,7 @@
 웹 페이지에 작가들의 작업과 시민들의 작업, 워크샵 내용을 아카이빙하였습니다.
 
 ![thumbnail image](http://aliceon.net/iam/img/thumbnail.jpg)
+
 link ▶︎ http://aliceon.net/iam/
 
 DESIGN BY [JISU PARK](https://github.com/gpg1127)
